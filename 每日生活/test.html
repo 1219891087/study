@@ -1,47 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:font-size="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>学校生活</title>
+    <script>
+        var password = prompt("请输密码：");
+        var flag = 0;
+        if (password == hgj2001){
+
+        }
+        else {
+            close()
+        }
+    </script>
     <style type="text/css">
 
-        .d1{
-            background-image: url(./资料/背景图片.bmp);
+        body{
+            background-image: url(资料/背景图片/背景图片1.png);
             background-size:100% 100%;
-            opacity: 0.5;
+
         }
-        .d2{
-            background: rgba(225,225,225,0.3); 
+        html,body{
+            height:100%;
         }
+        @keyframes first {
+            0%{opacity:0}
+            20%{opacity:0}
+            30%{opacity:20}
+            50%{opacity:100}
+            70%{opacity:20}
+            80%{opacity:0}
+            100%{opacity:0}
+        }
+        @keyframes second {
+            0%{opacity:100}
+            20%{opacity:20}
+            40%{opacity:0}
+            50%{opacity:0}
+            60%{opacity:0}
+            80%{opacity:20}
+            100%{opacity:100}
+        }
+        #author{
+            font-size:15px;
+            position:fixed;
+            top:10px;
+            left:20px;
+            animation: first 10s infinite;
+            animation-timing-function:linear;
+        }
+        #name {
+            font-size: 15px;
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            animation: second 10s infinite;
+            animation-timing-function: linear;
+        }
+        audio{
+            font-size:15px;
+            position:fixed;
+            top:10px;
+            left:350px;
+        }
+
+        #firsst_title{
+            padding-left:5%;
+        }
+
+        #firsst_content{
+            padding-left:5%;
+        }
+
     </style>
 </head>
 <body>
-<div class="d1">
-<div class="d2">
-<p style="font-size:70px" align="center">
-学校日常</p>
+<div style="background-color: rgba(239,236,189,0.8);
+            width:80%;
+            height:80%;
+            margin: 0 auto;
+            border-radius: 20px;
+            font-size:40px;
+            line-height: 10px;";
+            >
 
-<p style="font-size:20px" align="center">
-<span style="margin-right:250px;">
-javascript学习进度（8/72）</p>
-<p style="font-size:20px" align="center">
-<span style="margin-right:250px;">
-jpremiere学习进度（4/78）</p>
-<p style="font-size:20px" align="center">
-<span style="margin-right:250px;">
-英语四级考试倒计时 106 天</p>
+    <p style="font-size:60px" align="center" >
+        <br><br><br><br>
+        小恐龙</p>
+    <p id="firsst_title" style="font-size:40px"  >
+        学习任务进度</p>
+    <div style="background-color: rgba(79,139,255,0.6);
+            width:90%;
+            margin: 0 auto;
+            border-radius: 20px;
+            line-height: 10px">
 
-<p style="font-size:30px" class="p2">
-<span style="margin-left:200px;">
+        <p id="firsst_content" style="font-size:20px" ><br>
+            javascript学习进度（20/72）</pid>
+        <p id="firsst_content" style="font-size:20px" >
+            premiere学习进度（8/78）</p>
+        <p id="firsst_content" style="font-size:20px" >
+            英语四级考试倒计时 104 天
+            <br><br></p>
+    </div>
+    <p id="firsst_title" style="font-size:40px"  >
+        生活详解</p>
+    <div style="background-color: rgba(76,117,255,0.6);
+            width:90%;
+            margin: 0 auto;
+            border-radius: 20px;
+            line-height: 10px">
 
-<span style="margin-left:20px;">
-<a href="./资料/8月/8.25.docx" target="_blank">8月24日</a><br></p>
+        <p id="firsst_content" style="font-size:20px" ><br>
+            <a href="./资料/8月/8.26.html" target="_blank">8月26日</a></pid>
+        <p id="firsst_content" style="font-size:20px" >
+            <a href="./资料/8月/8.27.html" target="_blank">8月27日</a></p>
+        <p id="firsst_content" style="font-size:20px" >
+            <a href="./资料/8月/8.28.html" target="_blank">8月28日</a>
+            <br><br></p>
+    </div>
 
-<audio src="./资料/折戸伸治 - 羽根.mp3" autoplay="autoplay">
+</div>
+
+<p id="name">歌名： Life Is Like A Boat</p>
+<p id="author">作者：Rie fu </p>
+<audio src="./资料/背景音乐/Rie%20fu%20-%20Life%20Is%20Like%20A%20Boat.mp3" controls="controls" autoplay="autoplay">
 </audio>
 
-</div>
-</div>
+
 
 </body>
 </html>
